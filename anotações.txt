@@ -1,0 +1,165 @@
+##################
+
+Tags:
+
+font-size = para alterar o tamanho da fonte. A fonte vem em 16px por default.
+text-align = para centralizar o texto
+a = Elemento âncora, com o atributo href cria-se uma hiperligação. (<a href=index.html)
+nav = elemento usado para navegação
+font-weight = Peso da fonte
+text-decoration = Decoração do texto, exemplo: sublinhado, etc.
+padding: 20px 0; 20px para cima e para baixo, 0 para esquerda e direita
+main - indicação a sessão principal da página
+box-sizing: border-box = Serve para evitar somas do percentual + pixels
+hover = quando o mouse está por cima do elemento
+required = utilizar dentro da tag HTML para deixar o campo obrigatório
+##################
+
+Cores hexadecimais:
+
+RGB
+2 campos para cada
+# _ _ _ _ _ _
+
+0 = ausência
+F = máximo
+
+Cores em inglês = red, yellow, black, etc...
+
+Cores em RGB = 0,1,2,3...255
+0 = ausência
+255 = máximo
+rgb(255,255,255)
+
+
+##################
+
+Dimensões no CSS:
+
+Largura = width
+Altura = height
+Espaçamento interno = padding
+Espaçamento externo = margin -- exemplo: margin {0, 0, 0, 0}, primeiro para o topo, direita, baixo, esquerda
+
+#################
+
+Listas - HTML
+<ul> Listas não ordenadas
+<ol> Listas ordenadas
+
+Filho da <ul> / <li> List item para cada item
+
+#################
+Classes e IDS no CSS:
+
+Classes . = Para elementos repetíveis
+ID # = Para um único elemento
+
+O ideal é usar classes para estilo e ID para comportamento.
+#################
+
+Alinhamentos - CSS
+
+1 - Uma tag ocupa a largura inteira da página = block
+Ou seja ele bloqueia o conteúdo da linha, ocorre ao utilizar a tag <li>
+
+2 - Uma imagem por exemplo, não bloqueia o conteúdo, permite que tenha outros conteúdos na mesma linha = inline
+A diferença é que mesmo que diminua a largura do elemento block, ele sempre vai ocupar a linha, mesmo preenchendo metade
+O inline não permite alterar o espaçamento interno e externo
+
+3 - inline e block
+Ele bloqueia uma largura, porém é definitivo e permite alterar os espaçamentos.
+
+Isso são características da tag DISPLAY
+
+##################
+
+Cabeçalhos
+
+Header - Topo
+
+##################
+
+Tipos de posicionamento
+Posição estática = position = static
+Posição relativa = position = relative // Permite que você consiga alterar as dimensões do elemento, porém o ponto inicial dele permanece o mesmo sendo apenas deslocado.
+Posição absoluta = position = absolute // Absoluto em relação a página toda, ao Cabeçalho, etc..., Desloca o elemento do ponto inicial de inserção.
+
+A caixa do css se define em várias caixas, sendo a primeira do conteúdo > padding > border > margin
+
+Float é um comportamento em que o elemento descola da página, mas o espaço continua sendo ocupado.
+
+clear: left; serve para limpar o Float
+
+##################
+
+3 itens principais para criação de uma borda
+border-color black = cor da borda
+border-width 2px = largura da borda
+border-style solid = estilo da borda
+
+Forma unificada:
+border: 2px solid black
+
+##################
+
+Pseudoclasses de estado CSS
+nav a:hover{}
+
+Pseudoelementos
+
+/* Pega o primeiro elemento da lista */
+.itens:first-child {
+  font-weight: bold;
+}
+
+##################
+
+Hierarquia no CSS
+
+Tag = 1
+Class = 10
+ID = 100
+CSS_INLINE = 1000
+
+##################
+
+Formulário:
+
+Para agrupar os campos dentro do formulário o ideal é usar fieldset ao invés da DIV.
+Dentro do fieldset é possível usar a tag legend para dar um título as informações.
+
+Transition serve para suavizar o aparecimento do elemento/ação
+
+Exemplo:
+
+Transition: 1s background;
+
+Ou transition: 1s all; para todos os elementos
+
+##################
+
+Tabelas
+
+As tags <thead>, <tbody> e <tfoot> ajudam a deixar o conteúdo da tabela mais bem dividido e mais semântico.
+
+quando uma linha, que deveria ter 5 células, passa a mostrar só "uma célula".
+
+Esse efeito é conseguido através da propriedade colspan=X, onde X é o número de células que você quer agrupar.
+
+<tr>
+    <td colspan="5">Rio de Janeiro</td> 
+</tr>
+
+##################
+
+Section ao invés da DIV
+
+DIV é uma divisão visual
+Section é uma divisão onde tem um conteúdo complexo. Imagem e texto para a mesma coisa por exemplo.
+
+##################
+
+Medidas proporcionais 
+
+em - Medida proporcional para pixel. Exemplo: 2 vezes o tamanho da fonte base. Fonte padrão 15px fonte, 2em = 30px
